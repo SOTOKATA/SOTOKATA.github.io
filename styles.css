@@ -1,0 +1,48 @@
+﻿div {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color:  rgba(255,255, 255, 0.8);
+
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+body {
+    background-image: url("Images/Background.png");
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#navigation {
+    font: bold 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#background {
+    width: 75%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    font: bold 18px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+legend {
+    font: bold 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.center-item {
+    margin-right: auto;
+}
+
+.right-item {
+    position: absolute;
+    right: 0;
+}
