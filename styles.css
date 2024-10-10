@@ -9,7 +9,7 @@ table, td {
 }
 
 body {
-    background-image: url("Images/Background.png");
+    background: url("./Images/Background.png");
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
