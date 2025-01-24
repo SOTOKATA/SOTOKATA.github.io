@@ -1,64 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link link rel="stylesheet" type="text/css" href="./styles.css">
-  <script src="navigation.js"></script>
-  <title>Vonsole</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="global-styles.css" rel="stylesheet" type="text/css">
+    <script src="navigation.js"></script>
+    <title>Home</title>
 </head>
+
 <body>
+    <div class="navigation"></div>
 
+    <fieldset class="item list" style="float: left; margin-left: 5%;">
+        <legend>Log in</legend>
+        <input type="text" name="login" id="login">
+        <input type="text" name="password" id="password">
+        <button id="login-submit">Submit</button>
+    </fieldset>
 
-<div id="background">
-  <div id="navigation"></div>
-
-  <fieldset>
-    <legend id="title">Welcome to the Vonsole page!</legend>
-
-    <p>Vonsole is a free GNU-licensed file manager that works in a console.  </p>
-    <p>It allows you to create, delete, copy, cut, rename, and much more!</p>
-  </fieldset>
-
-  <div class="container">
-      <div id="VersionSection" style="width: 50%"></div>
-      <div id="CommandSection" style="width: 50%"></div>
-  </div>
-</div>
-
-
-<script>
-
-  function VersionSection() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', './Versions/Version.html', true);
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        document.getElementById('VersionSection').innerHTML = xhr.responseText;
-      }
-    };
-
-    xhr.send();
-  }
-
-  function CommandSection() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', './Commands/Command.html', true);
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        document.getElementById('CommandSection').innerHTML = xhr.responseText;
-      }
-    };
-
-    xhr.send();
-  }
-
-
-  window.addEventListener('load', VersionSection);
-  window.addEventListener('load', CommandSection)
-</script>
-
+    <section>
+        
+    </section>
 </body>
+
 </html>

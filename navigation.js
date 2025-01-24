@@ -1,13 +1,14 @@
-﻿function loadTable() {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', '/navigation.html', true);
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('navigation').innerHTML = xhr.responseText;
-        }
-    };
-
-    xhr.send();
-}
-window.addEventListener('load', loadTable);
+document.addEventListener("DOMContentLoaded", function () {
+    const navPlaceholder = document.createElement("div");
+    navPlaceholder.id = "nav-placeholder";
+    document.body.insertBefore(navPlaceholder, document.body.firstChild); // Insert at the top of the body
+  
+    // Load the navigation HTML
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        navPlaceholder.innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+  });
+  

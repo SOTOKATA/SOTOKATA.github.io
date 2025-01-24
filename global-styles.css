@@ -1,0 +1,27 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5px;
+
+    width: min-content;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+
+    background-color: goldenrod;
+}
+
+fieldset {
+    border: 1px solid black;
+}
